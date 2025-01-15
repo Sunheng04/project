@@ -1,0 +1,267 @@
+/* font family */
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alegreya Sans", serif;
+}
+
+/* ====Header==== */
+.back-header {
+  width: 100%;
+  background-color: #e97000;
+}
+.header {
+  width: 1450px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .privacy {
+  display: flex;
+  gap: 15px;
+}
+.header .privacy a {
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 700;
+  color: white;
+}
+.header .promotion {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  padding: 8px 0;
+}
+.header .country {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.header .country button {
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.header .country button i {
+  font-size: 15px;
+}
+/* =====End of Header===== */
+
+/* =====Navbar Section===== */
+.back-navbar {
+  width: 100%;
+  background-color: #fff7ee;
+}
+.navbar {
+  width: 1600px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.setting {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search {
+  display: flex;
+}
+.search input {
+  width: 450px;
+  padding: 15px 20px;
+  font-size: 19px;
+  border: 1px solid gray;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  outline: none;
+  color: rgb(133, 133, 133);
+}
+.search button {
+  border: none;
+  width: 100px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #e97000;
+  font-size: 20px;
+  color: white;
+}
+.support {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  padding: 7px 15px;
+  border-radius: 15px;
+  border: 1px solid rgb(235, 226, 216);
+  cursor: pointer;
+}
+.support p {
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.support p:nth-child(2):hover {
+  color: #e97000;
+}
+.support i {
+  font-size: 30px;
+  color: #434343;
+}
+.support:nth-child(2) {
+  width: 230px;
+}
+.support:nth-child(4) {
+  height: 55px;
+}
+
+/* ======Menu Section =========== */
+.back-menu {
+  width: 100%;
+  background-color: #fdf0e1;
+}
+.menu-section {
+  width: 1600px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.category {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.category i {
+  font-size: 25px;
+}
+.category select {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: 700;
+}
+.category select:hover {
+  color: #e97000;
+}
+
+.menu {
+  display: flex;
+  gap: 45px;
+}
+.menu li {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #3c3c3c;
+}
+.menu li:hover {
+  color: #e97000;
+}
+.menu li:first-child {
+  color: #e97000;
+}
+.menu li:nth-child(2) {
+  position: relative;
+}
+.menu li:nth-child(2):hover .sub-menu {
+  height: 340px;
+}
+.sub-menu {
+  position: absolute;
+  background-color: #fdf0e1;
+  width: 100wh;
+  top: 45px;
+  height: 0;
+  left: -606px;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.a {
+  padding: 20px;
+}
+.menu-cards {
+  width: 1600px;
+  margin: auto;
+  display: grid;
+  margin-top: 10px;
+  gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 330px;
+}
+.card{
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.card h4{
+  margin-top: 15px;
+  margin-bottom: 15px ;
+}
+.card .image-container{
+  width: 100%;
+  height: 260px;
+  border-radius: 25px;
+  overflow: hidden;
+  border: 2px solid #ebe2d8;
+}
+.card .image-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu li:nth-child(4) {
+  position: relative;
+}
+.menu li:nth-child(4):hover .page-sub-menu{
+  height: 115px;
+}
+.page-sub-menu{
+  position: absolute;
+  background-color: #fdf0e1;
+  overflow: hidden;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 200px;
+  top: 45px;
+  transition: all 0.2s ease;
+  height: 0;
+}
+.page-sub-menu ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 25px;
+}
+
+.discount {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  color: #e97000;
+  font-weight: 600;
+}
+.discount i {
+  color: #3c3c3c;
+}
